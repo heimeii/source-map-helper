@@ -1,5 +1,5 @@
 {
-  "name": "sourcemap-helper",
+  "name": "source-map-helper",
   "version": "0.0.1",
   "description": "Map production code line number to sourcecode with standalone sourcemap.",
   "main": "./lib/index.js",
@@ -9,11 +9,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"test success\""
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.qunhequnhe.com:tool-frontend/sourcemap-helper.git"
+    "url": "git@github.com:heimeii/source-map-helper.git"
   },
   "keywords": [
     "source",
@@ -36,5 +36,7 @@
     "chalk": "^2.3.2",
     "source-map": "^0.7.2",
     "yargs": "^11.0.0"
+  },
+  "devDependencies": {
   }
 }

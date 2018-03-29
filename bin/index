@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+const SourceMapHelper = require('../lib/index');
+const argv = require('yargs')
+    .usage('Usage: $0 <command> [options]')
+    // .command('.', '.')
+    .option('column', {
+        alias: 'c',
+        describe: 'error column'
+    })
+    .option('line', {
+        alias: 'l',
+        describe: 'error line'
+    })
+    .option('url', {
+        alias: 'u',
+        describe: 'source-map url'
+    })
+    .demandOption(['c', 'l', 'u'])
+    .help('help')
+    .alias('help', 'h')
+    .argv;
+
+SourceMapHelper(argv.url).then((sourceMapHelper) => {
+    console.log(sourceMapHelper.setConfig({
+        line: argv.line,
+        column: argv.column,
+    }).getResult());
+});
