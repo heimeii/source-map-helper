@@ -1,0 +1,21 @@
+sudo: false
+language: node_js
+node_js:
+  - "node"
+
+script:
+  - npm test
+
+cache:
+  directories:
+    - "node_modules"
+
+deploy:
+  provider: npm
+  email: "Huxfjxj@gmail.com"
+  api_key: "1b7d8007-2066-47fe-8652-698ab23ed4d6"
+
+os:
+  - linux
+  - osx
+  - windows

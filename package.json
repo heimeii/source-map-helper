@@ -1,0 +1,40 @@
+{
+  "name": "sourcemap-helper",
+  "version": "0.0.1",
+  "description": "Map production code line number to sourcecode with standalone sourcemap.",
+  "main": "./lib/index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.qunhequnhe.com:tool-frontend/sourcemap-helper.git"
+  },
+  "keywords": [
+    "source",
+    "map",
+    "consume"
+  ],
+  "author": "heimei",
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "engines": {
+    "node": ">= 8"
+  },
+  "license": "ISC",
+  "bin": {
+    "source": "./bin/index"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "source-map": "^0.7.2",
+    "yargs": "^11.0.0"
+  }
+}
